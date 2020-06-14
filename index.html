@@ -43,6 +43,15 @@
             .section2{
                 padding : 200px 70px;
             }
+            #TestimonialMedia, #DownloadPage{
+                background: #f59342;
+                color : white!important;
+                text-align: center;
+                
+            }
+            #TestimonialMedia a, #DownloadPage a{
+                color : white;
+            }
             .navbar{
                 color : #f59342;
                 margin : 10px;
@@ -77,9 +86,15 @@
                 text-decoration: underline;
                 font-weight: bold;
             }
-          	li.nav-item a:hover{
-          		text-decoration : none;
-          }
+            
+            .thetestimonialwheel{
+                margin : 50px 0;
+                padding : 10px 20px;
+            }
+            .testimonialcard{
+                height: 300px;
+                margin : 10px 20px;
+            }
         </style>
     </head>
     <body>
@@ -88,12 +103,12 @@
                 <div class="navbar-brand">block.<b>it!</b></div>
                 <div class="navbar-nav">
                     <ul class="nav">
-                        <li class="nav-item"><a href="https://github.com/hakushigo/yello">GitHub</a></li>
+                        <li class="nav-item">Github</li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="main">
+        <div class="main" id="mainArea">
             <div class="col-12">
                 <div class="row">
                     <img class="img col-lg-6" src="hugo-bad-gateway.png">
@@ -112,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <div class="section2">
+        <div class="section2" id="explanationOne">
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-5">
@@ -137,33 +152,83 @@
                 </div>
             </div>
         </div>
-        <div class="section2 reserve">
+        <div class="section2 reserve" id="explanationTwo">
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="abc">
                             <p>
-                                <b>This software is OPEN!</b><br>
-                                Yes, OPEN SOURCE! You can see the source code on github/doagahs/blockit repository, you can build/edit/distribute. It licensed on MIT, an open source software license!
-                                
+                                <b>OPEN SOURCE</b><br>
+                                We let people to see, modify and use the source code. Because we want prove to everyone, that our software is safe to use
                                 <br><br>
-                                <b>Easy to manage</b><br>
-                                You can manage it easly! It has a beatiful dashboard with a lot functionality, make sure you see it as your beatiful house.
+                                <b>STABLE</b><br>
+                                We release the new version for every 3 month. So, we have enough time to develop the new feature, test it and improve it to make sure our user will not get any bugs
                             </p>
                         </div>
                     </div>
                     <div class="col-md-3"></div>
                         <div class="col-md-5">
                             <h2 class="big-text">
-                                Why this software<br>
-                                is so<br>
-                                Wow! <span style="color: rgba(245, 147, 66, .5)">OvO</span>
+                                Why block.it <br>
+                                Is a good choice <br>
+                                for you?
                             </h2>
                             <hr style="border-color: rgba(245, 147, 66, 1)">
                         </div>
                     </div>
                 </div>
         </div>
+        <div class="section2 reserve" id="TestimonialMedia">
+            <div class="">
+                <h2 class="big-text">
+                    What our user says about block it?
+                </h2>
+                <div class="thetestimonialwheel row d-flex justify-content-center">
+                        <div class="testimonialcard col-md-3 card">
+                            <h5><b>Heading</b></h5>
+                            <hr>
+                            <p>
+                                Body, you can write your testimony here. Make sure u don't use any swear word, stay save and health
+                            </p>
+                        </div>
+                        
+                        <div class="testimonialcard col-md-3 card">
+                            <h5><b>Heading</b></h5>
+                            <hr>
+                            <p>
+                                Body, you can write your testimony here. Make sure u don't use any swear word, stay save and health
+                            </p>
+                        </div>
+                        
+                        <div class="testimonialcard col-md-3 card">
+                            <h5><b>Heading</b></h5>
+                            <hr>
+                            <p>
+                                Body, you can write your testimony here. Make sure u don't use any swear word, stay save and health
+                            </p>
+                        </div>
+                                                
+                </div>
+            </div>
+        </div>
+        <div class="section2 reserve" id="DownloadPage">
+            <h2 class="big-text">How to download and install?</h2>
+            <hr class="col-3">
+            <p>
+                <b>WINDOWS</b><br>
+                Download block.it from <a href="#">this link</a> and follow the instruction in the setup wizard
+                <br><br>
+                <b>MAC OS X</b><br>
+                Download <a href="#">DMG File</a> and follow our documentation at <a href="#">this page</a>
+                <br><br>
+                <b>Linux (Debian-based)</b><br>
+                Add our PPA repository <kbd>ppa:hksg/blockit</kbd> <br>or run this command <kbd>sudo add-apt-repository ppa:hksg/blockit</kbd> and run <kbd>sudo apt-get install hksg-blockit</kbd> in the terminal
+            </p><br>
+            <p>
+                Block.it use <b>CLI Interface</b> to run, see our documentation at this <a href="#">page</a>
+            </p>
+        </div>
+        
                     <div class="footer">
                 illustration by Ouch.pics! <a href="https://icons8.com">go to the author's site</a>
             </div>
